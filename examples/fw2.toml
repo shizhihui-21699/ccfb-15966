@@ -1,0 +1,32 @@
+[mcu]
+dregion = 8
+
+[boot]
+entry = { symbol = "boot_mpu_init" }
+startup = true
+
+[[object]]
+name = "kernel_code"
+range = "__kernel_code_start..__kernel_code_end"
+kind = "code"
+expected = { unprivileged = "rx" }
+
+[[object]]
+name = "kernel_data"
+range = "__kernel_data_start..__kernel_data_end"
+kind = "data"
+expected = { writable = false, unprivileged = "---" }
+
+[[task]]
+name = "pump_control"
+switch_entry = "task_switch"
+switch_arg = { symbol = "task1_cfg" }
+stack = "__task1_stack_bottom..__task1_stack_top"
+expected = { writable = true }
+
+[[task]]
+name = "alarm_ui"
+switch_entry = "task_switch"
+switch_arg = { symbol = "task2_cfg" }
+stack = "__task2_stack_bottom..__task2_stack_top"
+expected = { writable = true }

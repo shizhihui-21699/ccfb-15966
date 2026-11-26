@@ -1,0 +1,776 @@
+[
+ {
+  "asm": "movs r0,#0",
+  "words": [
+   "2000"
+  ]
+ },
+ {
+  "asm": "movs r7,#0xff",
+  "words": [
+   "27ff"
+  ]
+ },
+ {
+  "asm": "cmp r3,#0xc8",
+  "words": [
+   "2bc8"
+  ]
+ },
+ {
+  "asm": "adds r2,#7",
+  "words": [
+   "3207"
+  ]
+ },
+ {
+  "asm": "subs r5,#9",
+  "words": [
+   "3d09"
+  ]
+ },
+ {
+  "asm": "movw r0,#0x1234",
+  "words": [
+   "f241",
+   "2034"
+  ]
+ },
+ {
+  "asm": "movw r10,#0xabcd",
+  "words": [
+   "f64a",
+   "3acd"
+  ]
+ },
+ {
+  "asm": "movt r3,#0x5678",
+  "words": [
+   "f2c5",
+   "6378"
+  ]
+ },
+ {
+  "asm": "ldr r0,[r1]",
+  "words": [
+   "6808"
+  ]
+ },
+ {
+  "asm": "str r0,[r1]",
+  "words": [
+   "6008"
+  ]
+ },
+ {
+  "asm": "ldr r2,[r3,#4]",
+  "words": [
+   "685a"
+  ]
+ },
+ {
+  "asm": "str r2,[r3,#8]",
+  "words": [
+   "609a"
+  ]
+ },
+ {
+  "asm": "ldrb r0,[r1]",
+  "words": [
+   "7808"
+  ]
+ },
+ {
+  "asm": "strb r0,[r1]",
+  "words": [
+   "7008"
+  ]
+ },
+ {
+  "asm": "ldrh r3,[r2,#6]",
+  "words": [
+   "88d3"
+  ]
+ },
+ {
+  "asm": "strh r3,[r2,#6]",
+  "words": [
+   "80d3"
+  ]
+ },
+ {
+  "asm": "ldr r0,[r1,r2]",
+  "words": [
+   "5888"
+  ]
+ },
+ {
+  "asm": "str r0,[r1,r2]",
+  "words": [
+   "5088"
+  ]
+ },
+ {
+  "asm": "add r0,r1,r2",
+  "words": [
+   "eb01",
+   "0002"
+  ]
+ },
+ {
+  "asm": "sub r0,r1,r2",
+  "words": [
+   "eba1",
+   "0002"
+  ]
+ },
+ {
+  "asm": "add r0,r1,#2",
+  "words": [
+   "f101",
+   "0002"
+  ]
+ },
+ {
+  "asm": "add r0,r1",
+  "words": [
+   "4408"
+  ]
+ },
+ {
+  "asm": "sub r0,r1,r2",
+  "words": [
+   "eba1",
+   "0002"
+  ]
+ },
+ {
+  "asm": "add r8,r1",
+  "words": [
+   "4488"
+  ]
+ },
+ {
+  "asm": "cmp r5,r2",
+  "words": [
+   "4295"
+  ]
+ },
+ {
+  "asm": "cmp r8,r9",
+  "words": [
+   "45c8"
+  ]
+ },
+ {
+  "asm": "mov r0,r1",
+  "words": [
+   "4608"
+  ]
+ },
+ {
+  "asm": "mov r9,r10",
+  "words": [
+   "46d1"
+  ]
+ },
+ {
+  "asm": "bx lr",
+  "words": [
+   "4770"
+  ]
+ },
+ {
+  "asm": "bx r3",
+  "words": [
+   "4718"
+  ]
+ },
+ {
+  "asm": "blx r4",
+  "words": [
+   "47a0"
+  ]
+ },
+ {
+  "asm": "ands r0,r1",
+  "words": [
+   "4008"
+  ]
+ },
+ {
+  "asm": "eors r0,r1",
+  "words": [
+   "4048"
+  ]
+ },
+ {
+  "asm": "orrs r0,r1",
+  "words": [
+   "4308"
+  ]
+ },
+ {
+  "asm": "bics r0,r1",
+  "words": [
+   "4388"
+  ]
+ },
+ {
+  "asm": "mvns r0,r1",
+  "words": [
+   "43c8"
+  ]
+ },
+ {
+  "asm": "muls r0,r1",
+  "words": [
+   "4348"
+  ]
+ },
+ {
+  "asm": "tst r0,r1",
+  "words": [
+   "4208"
+  ]
+ },
+ {
+  "asm": "cmp r0,r1",
+  "words": [
+   "4288"
+  ]
+ },
+ {
+  "asm": "cmn r0,r1",
+  "words": [
+   "42c8"
+  ]
+ },
+ {
+  "asm": "lsls r0,r1,#3",
+  "words": [
+   "00c8"
+  ]
+ },
+ {
+  "asm": "lsrs r0,r1,#4",
+  "words": [
+   "0908"
+  ]
+ },
+ {
+  "asm": "asrs r0,r1,#5",
+  "words": [
+   "1148"
+  ]
+ },
+ {
+  "asm": "lsls r0,r1",
+  "words": [
+   "4088"
+  ]
+ },
+ {
+  "asm": "lsrs r0,r1",
+  "words": [
+   "40c8"
+  ]
+ },
+ {
+  "asm": "asrs r0,r1",
+  "words": [
+   "4108"
+  ]
+ },
+ {
+  "asm": "adcs r0,r1",
+  "words": [
+   "4148"
+  ]
+ },
+ {
+  "asm": "sbcs r0,r1",
+  "words": [
+   "4188"
+  ]
+ },
+ {
+  "asm": "rsbs r0,r1,#0",
+  "words": [
+   "4248"
+  ]
+ },
+ {
+  "asm": "add sp,#16",
+  "words": [
+   "b004"
+  ]
+ },
+ {
+  "asm": "sub sp,#8",
+  "words": [
+   "b082"
+  ]
+ },
+ {
+  "asm": "add r0,sp,#4",
+  "words": [
+   "a801"
+  ]
+ },
+ {
+  "asm": "add r4,sp,#12",
+  "words": [
+   "ac03"
+  ]
+ },
+ {
+  "asm": "push {r0,r1}",
+  "words": [
+   "b403"
+  ]
+ },
+ {
+  "asm": "push {r4,r5,r6,lr}",
+  "words": [
+   "b570"
+  ]
+ },
+ {
+  "asm": "pop {r0,r1}",
+  "words": [
+   "bc03"
+  ]
+ },
+ {
+  "asm": "pop {r4,pc}",
+  "words": [
+   "bd10"
+  ]
+ },
+ {
+  "asm": "ldm r0!,{r1,r2}",
+  "words": [
+   "c806"
+  ]
+ },
+ {
+  "asm": "stm r0!,{r1,r2}",
+  "words": [
+   "c006"
+  ]
+ },
+ {
+  "asm": "rev r0,r1",
+  "words": [
+   "ba08"
+  ]
+ },
+ {
+  "asm": "rev16 r0,r1",
+  "words": [
+   "ba48"
+  ]
+ },
+ {
+  "asm": "revsh r0,r1",
+  "words": [
+   "bac8"
+  ]
+ },
+ {
+  "asm": "sxth r0,r1",
+  "words": [
+   "b208"
+  ]
+ },
+ {
+  "asm": "sxtb r0,r1",
+  "words": [
+   "b248"
+  ]
+ },
+ {
+  "asm": "uxth r0,r1",
+  "words": [
+   "b288"
+  ]
+ },
+ {
+  "asm": "uxtb r0,r1",
+  "words": [
+   "b2c8"
+  ]
+ },
+ {
+  "asm": "b LK",
+  "words": [
+   "e7ff"
+  ]
+ },
+ {
+  "asm": "beq LK",
+  "words": [
+   "d0ff"
+  ]
+ },
+ {
+  "asm": "bne LK",
+  "words": [
+   "d1ff"
+  ]
+ },
+ {
+  "asm": "bl LK",
+  "words": [
+   "f000",
+   "f800"
+  ]
+ },
+ {
+  "asm": "b.w LK",
+  "words": [
+   "f000",
+   "b800"
+  ]
+ },
+ {
+  "asm": "beq.w LK",
+  "words": [
+   "f000",
+   "8000"
+  ]
+ },
+ {
+  "asm": "nop",
+  "words": [
+   "bf00"
+  ]
+ },
+ {
+  "asm": "cpsid i",
+  "words": [
+   "b672"
+  ]
+ },
+ {
+  "asm": "cpsie i",
+  "words": [
+   "b662"
+  ]
+ },
+ {
+  "asm": "ldr.w r0,[r1,#0x100]",
+  "words": [
+   "f8d1",
+   "0100"
+  ]
+ },
+ {
+  "asm": "str.w r0,[r1,#0x100]",
+  "words": [
+   "f8c1",
+   "0100"
+  ]
+ },
+ {
+  "asm": "ldr.w r0,[r1,r2,lsl #2]",
+  "words": [
+   "f851",
+   "0022"
+  ]
+ },
+ {
+  "asm": "str.w r0,[r1,r2,lsl #2]",
+  "words": [
+   "f841",
+   "0022"
+  ]
+ },
+ {
+  "asm": "ldrb.w r0,[r1,#0x20]",
+  "words": [
+   "f891",
+   "0020"
+  ]
+ },
+ {
+  "asm": "strb.w r0,[r1,#0x20]",
+  "words": [
+   "f881",
+   "0020"
+  ]
+ },
+ {
+  "asm": "ldrh.w r0,[r1,#0x40]",
+  "words": [
+   "f8b1",
+   "0040"
+  ]
+ },
+ {
+  "asm": "strh.w r0,[r1,#0x40]",
+  "words": [
+   "f8a1",
+   "0040"
+  ]
+ },
+ {
+  "asm": "ldr.w r0,[pc,#0x40]",
+  "words": [
+   "f8df",
+   "0040"
+  ]
+ },
+ {
+  "asm": "add.w r0,r1,r2",
+  "words": [
+   "eb01",
+   "0002"
+  ]
+ },
+ {
+  "asm": "add.w r0,r1,#0x24",
+  "words": [
+   "f101",
+   "0024"
+  ]
+ },
+ {
+  "asm": "sub.w r0,r1,r2",
+  "words": [
+   "eba1",
+   "0002"
+  ]
+ },
+ {
+  "asm": "sub.w r0,r1,#0x10",
+  "words": [
+   "f1a1",
+   "0010"
+  ]
+ },
+ {
+  "asm": "orr.w r0,r1,#0x5",
+  "words": [
+   "f041",
+   "0005"
+  ]
+ },
+ {
+  "asm": "and.w r0,r1,#0xff",
+  "words": [
+   "f001",
+   "00ff"
+  ]
+ },
+ {
+  "asm": "eor.w r0,r1,r2",
+  "words": [
+   "ea81",
+   "0002"
+  ]
+ },
+ {
+  "asm": "bic.w r0,r1,r2",
+  "words": [
+   "ea21",
+   "0002"
+  ]
+ },
+ {
+  "asm": "tst.w r0,#0x10",
+  "words": [
+   "f010",
+   "0f10"
+  ]
+ },
+ {
+  "asm": "cmp.w r0,#0x1000",
+  "words": [
+   "f5b0",
+   "5f80"
+  ]
+ },
+ {
+  "asm": "mov.w r0,#0x10000",
+  "words": [
+   "f44f",
+   "3080"
+  ]
+ },
+ {
+  "asm": "push.w {r4,r5,r6,r7,r8,lr}",
+  "words": [
+   "e92d",
+   "41f0"
+  ]
+ },
+ {
+  "asm": "pop.w {r4,r5,r6,r7,r8,pc}",
+  "words": [
+   "e8bd",
+   "81f0"
+  ]
+ },
+ {
+  "asm": "mrs r0,primask",
+  "words": [
+   "f3ef",
+   "8010"
+  ]
+ },
+ {
+  "asm": "msr primask,r0",
+  "words": [
+   "f380",
+   "8810"
+  ]
+ },
+ {
+  "asm": "dsb sy",
+  "words": [
+   "f3bf",
+   "8f4f"
+  ]
+ },
+ {
+  "asm": "isb sy",
+  "words": [
+   "f3bf",
+   "8f6f"
+  ]
+ },
+ {
+  "asm": "mov r0,r8",
+  "words": [
+   "4640"
+  ]
+ },
+ {
+  "asm": "mov r8,r9",
+  "words": [
+   "46c8"
+  ]
+ },
+ {
+  "asm": "add r0,r9",
+  "words": [
+   "4448"
+  ]
+ },
+ {
+  "asm": "bx r12",
+  "words": [
+   "4760"
+  ]
+ },
+ {
+  "asm": "cmp.w r0,r1",
+  "words": [
+   "ebb0",
+   "0f01"
+  ]
+ },
+ {
+  "asm": "tst.w r0,r1",
+  "words": [
+   "ea10",
+   "0f01"
+  ]
+ },
+ {
+  "asm": "cmn.w r0,r1",
+  "words": [
+   "eb10",
+   "0f01"
+  ]
+ },
+ {
+  "asm": "teq.w r0,r1",
+  "words": [
+   "ea90",
+   "0f01"
+  ]
+ },
+ {
+  "asm": "mvn.w r0,#0x1",
+  "words": [
+   "f06f",
+   "0001"
+  ]
+ },
+ {
+  "asm": "add.w r0,r1,r2,lsl #3",
+  "words": [
+   "eb01",
+   "00c2"
+  ]
+ },
+ {
+  "asm": "orr.w r0,r1,r2,lsr #4",
+  "words": [
+   "ea41",
+   "1012"
+  ]
+ },
+ {
+  "asm": "sub.w r0,r1,r2,asr #2",
+  "words": [
+   "eba1",
+   "00a2"
+  ]
+ },
+ {
+  "asm": "eor.w r0,r1,#0x5",
+  "words": [
+   "f081",
+   "0005"
+  ]
+ },
+ {
+  "asm": "bic.w r0,r1,#0x5",
+  "words": [
+   "f021",
+   "0005"
+  ]
+ },
+ {
+  "asm": "uxtb.w r0,r1",
+  "words": [
+   "fa5f",
+   "f081"
+  ]
+ },
+ {
+  "asm": "sxth.w r0,r1",
+  "words": [
+   "fa0f",
+   "f081"
+  ]
+ },
+ {
+  "asm": "ldr r0,[pc,#0x40]",
+  "words": [
+   "4810"
+  ]
+ },
+ {
+  "asm": "cbz r0,LK",
+  "words": [
+   "b118"
+  ]
+ },
+ {
+  "asm": "cbnz r2,LK",
+  "words": [
+   "b91a"
+  ]
+ },
+ {
+  "asm": "it eq",
+  "words": [
+   "bf08"
+  ]
+ }
+]
